@@ -29,7 +29,7 @@ if has("gui_running")
   highlight Normal                    guifg=#E6E1DC guibg=#090909
   highlight Cursor                    guifg=#000000 guibg=#FFFFFF
   highlight NonText                   guifg=#333333 guibg=#000000
-  highlight CursorLine               guibg=#323300
+  highlight CursorLine                guibg=#323300
 
   " highlight Comment                   guifg=#BC9458 gui=italic
   " highlight SpellBad                  guifg=#990000 guibg=#000000
@@ -82,6 +82,7 @@ else
     highlight Number ctermfg=White ctermbg=Black
     highlight LineNr ctermfg=DarkGray ctermbg=Black
     highlight Cursor ctermfg=Black ctermbg=Yellow
+    highlight Folded ctermfg=DarkBlue ctermbg=Black
     highlight Keyword ctermfg=202
     highlight Define ctermfg=202
     highlight Comment ctermfg=DarkGray
@@ -100,6 +101,7 @@ else
     highlight String ctermfg=DarkGreen
     highlight Search ctermbg=White
     highlight Todo ctermbg=Black ctermfg=Yellow
+    highlight Title ctermbg=Black ctermfg=Yellow
     highlight ModeMsg ctermfg=white ctermbg=DarkGreen
     highlight NonText ctermfg=DarkGray ctermbg=Black
 endif
