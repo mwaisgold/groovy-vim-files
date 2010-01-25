@@ -85,3 +85,6 @@ nmap <C-O> :tabe
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>
+
+" Add estimations from taskpaper @estimation context
+vmap <silent> <Leader>add :write !awk 'BEGIN { total = 0 }; /@estimate/ { total += $NF }; END { print "Total", total }'<CR>
