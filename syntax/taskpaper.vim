@@ -30,8 +30,8 @@ syn region taskpaperProjectFold start=/^.\+:\s*$/ end=/^\s*$/ transparent fold
 syn sync fromstart
 
 "highlighting for Taskpaper groups
-HiLink taskpaperListItem       Identifier
-HiLink taskpaperContext       Identifier
+HiLink taskpaperListItem      Statement
+HiLink taskpaperContext       Keyword
 HiLink taskpaperProject       Title
 HiLink taskpaperDone          NonText
 
