@@ -81,7 +81,6 @@ else
     highlight Normal ctermfg=White ctermbg=Black
     highlight Number ctermfg=White ctermbg=Black
     highlight LineNr ctermfg=DarkGray ctermbg=Black
-    highlight Cursor ctermfg=Black ctermbg=Yellow
     highlight Folded ctermfg=DarkBlue ctermbg=Black
     highlight Keyword ctermfg=202
     highlight Define ctermfg=202
@@ -104,4 +103,12 @@ else
     highlight Title ctermbg=Black ctermfg=Yellow
     highlight ModeMsg ctermfg=white ctermbg=DarkGreen
     highlight NonText ctermfg=DarkGray ctermbg=Black
+    highlight Visual ctermfg=DarkGray ctermbg=Black
+    highlight TabLine cterm=bold ctermfg=Black ctermbg=Gray
+    highlight TabLineFill cterm=bold ctermfg=Black ctermbg=DarkGray
+    highlight TabLineSel cterm=NONE ctermfg=White ctermbg=DarkRed
+    highlight StatusLine ctermfg=Gray ctermbg=Black
+    highlight StatusLineNC ctermfg=DarkGray ctermbg=Black
+    highlight CursorLine cterm=NONE  ctermbg=NONE
+    highlight MatchParen ctermbg=Black ctermfg=DarkYellow
 endif
