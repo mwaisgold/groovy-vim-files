@@ -7,7 +7,7 @@ function! ExecuteTest()
 
   if match(s:line, '^\s*\(scenario\|test\|should\) ') != -1
     let s:name = substitute(s:line, '^.* "\(.*\)" do\s*', "\\1", "")
-    execute "!env ruby -Itest " . s:file . " -n 'test_" . tr(s:name, ' ', '_') . "'"
+    execute "!env ruby -Itest " . s:file . " -n 'test_" . tr(tr(s:name, ' ', '_'), "'", "_") . "'"
   else
     execute "!env ruby -Itest " . s:file
   end
