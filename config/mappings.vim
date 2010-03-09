@@ -46,6 +46,9 @@ map <C-U> <ESC>d0
 imap <C-A> <ESC>0i
 imap <C-E> <ESC>$a
 
+" Mimic suspend
+map <C-Z> <ESC>:sh<CR>
+
 " Move between tabs
 map <C-H> :tabp<CR>
 map <C-L> :tabn<CR>
