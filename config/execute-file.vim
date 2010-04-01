@@ -2,7 +2,7 @@
 function! ExecuteFile()
   let file = expand("%")
 
-  if stridx(file, "ruby.rb") != -1
+  if stridx(file, "/tmp/sample.rb") != -1
     " call PreviewResults("ruby -rubygems " . file)
     call ExecuteTest()
   elseif stridx(file, ".mo") != -1

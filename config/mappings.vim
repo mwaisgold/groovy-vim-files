@@ -1,6 +1,5 @@
 " Open scratch files for Ruby (F1) and Mo (S-F1)
-map <F1> :tabnew $HOME/Code/Samples/ruby.rb<CR>:tabm 0<CR>
-map <S-F1> :tabnew $HOME/Code/Samples/mo.mo<CR>:tabm 0<CR>
+map <F1> :tabnew /tmp/sample.rb<CR>:tabm 0<CR>
 
 " Source current file
 map <F2> :source %<CR>
