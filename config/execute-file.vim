@@ -15,6 +15,10 @@ function! ExecuteFile()
     call ExecuteTest()
   elseif stridx(file, ".rb") != -1
     execute "!ruby -c %"
+  elseif stridx(file, "Tests.groovy") != -1
+    execute "!grails test-app"
+  elseif stridx(file, ".groovy") != -1
+    execute "!groovy %"
   elseif stridx(file, ".lua") != -1
     call PreviewResults("lua " . file)
   elseif stridx(file, ".min") != -1
