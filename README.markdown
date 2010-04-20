@@ -12,7 +12,7 @@ And backup your configuration files:
 
 Now clone this repository:
 
-    git clone git://github.com/soveran/vim-files.git ~/.vim
+    git clone git://github.com/mwaisgold/groovy-vim-files.git ~/.vim
 
 In your `~/.vimrc` put this:
 
@@ -25,3 +25,5 @@ And in your `~/.gvimrc` put this:
 You may want to explore the `~/.vim/config` directory to see what's
 included and `~/.vim/config/mappings.vim` to see how to use the
 available tools.
+
+Based on soveran's grails pluggin: http://github.com/soveran/vim-files
