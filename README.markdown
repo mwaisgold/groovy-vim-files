@@ -26,4 +26,4 @@ You may want to explore the `~/.vim/config` directory to see what's
 included and `~/.vim/config/mappings.vim` to see how to use the
 available tools.
 
-Based on soveran's grails plugin: http://github.com/soveran/vim-files
+Based on soveran's ruby plugin: http://github.com/soveran/vim-files
