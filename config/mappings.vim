@@ -24,7 +24,7 @@ map <F10> :set hlsearch!<CR>
 imap <F10> <ESC>:set hlsearch!<CR>a
 
 " Handle trailing whitespaces and tabs.
-map <F11> <ESC>:%s/\s*$//g<CR>:%s/\t/  /<CR>
+map <C-F11> <ESC>:%s/\s*$//g<CR>:%s/\t/  /<CR>
 
 " Start and stop the webserver
 map <Leader>start <ESC>:!thin start -R config.ru -d<CR>
@@ -81,7 +81,7 @@ imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
 " Open file in new tab
-nmap <C-O> :tabe 
+nmap <C-O> :tabe
 
 " Run git blame in the current file and display results in the preview window.
 map <C-G> :call PreviewResults("git blame " . expand("%"))<CR>

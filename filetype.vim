@@ -18,6 +18,9 @@ augroup filetypedetect
 
   " HTML with Ruby - eRuby
   au! BufNewFile,BufRead *.erb,*.rhtml setf eruby
+  
+  " Groovy files
+  au! BufNewFile,BufRead *.groovy setf groovy
 
   " Io programming language
   au! BufNewFile,BufRead *.io setf io
