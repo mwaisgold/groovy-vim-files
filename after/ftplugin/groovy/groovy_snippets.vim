@@ -15,6 +15,8 @@ call IMAP('[]', "\[<++>\]", 'groovy')
 call IMAP('{}', "\{<++>\}", 'groovy')
 call IMAP('webtest--', "webtest(\"<++>\"){\n<++>\n}", 'groovy')
 call IMAP('test--', "void test<++>(){\n<++>\n}", 'groovy')
+call IMAP('save--', "save(flush: true)", 'groovy')
+call IMAP('delete--', "executeUpdate(\"delete <++>\")", 'groovy')
 
 " RDoc
 call IMAP('nodoc--', '#:nodoc:', 'groovy')
@@ -55,10 +57,10 @@ call IMAP('hash--', '{ "a" => 1, "b" => 2, "c" => 3 }', 'groovy')
 call IMAP('Test--', "class Test<++> < Test::Unit::TestCase\n<++>\nend", 'groovy')
 call IMAP('context--', "context \"<++>\" do\n<++>\nend", 'groovy')
 call IMAP('should--', "should \"<++>\" do\n<++>\nend", 'groovy')
-call IMAP('story--', "story \"<++>\" do\n<++>\nend", 'groovy')
-call IMAP('scenario--', "scenario \"<++>\" do\n<++>\nend", 'groovy')
-call IMAP('setup--', "setup do\n<++>\nend", 'groovy')
-call IMAP('teardown--', "teardown do\n<++>\nend", 'groovy')
+call IMAP('story--', "story \"<++>\", {\n<++>\n}", 'groovy')
+call IMAP('scenario--', "scenario \"<++>\", {\n<++>\n}", 'groovy')
+call IMAP('before--', "before {\n<++>\n}", 'groovy')
+call IMAP('after--', "after {\n<++>\n}", 'groovy')
 
 " Stories with Webrat
 call IMAP('sop--', "save_and_open_page", 'groovy')
